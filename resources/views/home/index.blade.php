@@ -18,12 +18,12 @@
 </head>
 <body>
 
-<div class="super_container">
-	
-	<!-- Header -->
-
-	<header class="header">
-		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+	<div class="super_container">
+		
+		<!-- Header -->
+		<header class="header">
+			<div class="header_content d-flex flex-row align-items-center justify-content-start">
+			
 			<div class="logo"><a href="#">The River</a></div>
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
 				<nav class="main_nav">
@@ -35,7 +35,9 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
-				<div class="book_button"><a href="booking.html">Book Online</a></div>
+				<x-app-layout>
+				</x-app-layout>
+				{{-- <div class="book_button"><a href="booking.html">Book Online</a></div> --}}
 				<div class="header_phone d-flex flex-row align-items-center justify-content-center">
 					<img src="{{ url('home/images/phone.png')}}" alt="">
 					<span>0183-12345678</span>

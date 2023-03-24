@@ -1,1 +1,3 @@
-<h1>Hello Admin</h1>
+<x-app-layout>
+    <p class="mt-5">Welcome Admin</p>
+</x-app-layout>
