@@ -33,3 +33,4 @@ Route::get('/show_room',[HotelController::class,'show_room'])->name('show_room')
 Route::get('/room',[HotelController::class,'room'])->name('room');
 Route::get('/dashboard',[HotelController::class,'dashboard'])->name('dashboard');
 Route::post('/add_room',[HotelController::class,'add_room'])->name('add_room');
+Route::get('/delete_room/{id}',[HotelController::class,'delete_room'])->name('delete_room');

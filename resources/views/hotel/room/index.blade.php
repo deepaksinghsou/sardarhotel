@@ -45,11 +45,7 @@
                                             </td>
                                             <td>
                             <a href="" class="btn btn-primary btn-sm">Edit</a>
-                            <a href="#"  class="btn btn-danger btn-sm">Delete</a>
-                            <form  action="" method="post">
-                                @csrf
-                                @method('delete')
-                            </form>
+                            <a onclick="return confirm('Are You Sure')" href="{{route('delete_room',$data->id)}}"  class="btn btn-danger btn-sm">Delete</a>
                          
                                             </td>
                                         </tr>
@@ -65,13 +61,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                function deletePost(id) {
-                    if (confirm("Are you sure you want to delete?")) {
-                        document.getElementById('post-edit-action-'+id).submit();
-                    }
-                }
-            </script>
+            
      
       
 @endsection

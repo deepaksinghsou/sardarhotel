@@ -37,7 +37,14 @@ class HotelController extends Controller
             $room->save();
         }
 
-        return view('hotel.room.index');
+        $rooms =Hotel::all();
+        return view('hotel.room.index',compact('rooms'));
+    }
+    public function delete_room($id)
+    {
+        $data=Hotel::find($id);
+        $data->delete();
+        return redirect()->back()->with('massage','room deleted successfully !');
     }
 
 
