@@ -29,4 +29,7 @@ Route::middleware([
     })->name('dashboard');
 });
 Route::get('/redirect',[HomeController::class,'redirect'])->name('redirect');
-Route::get('/rooms',[HotelController::class,'rooms'])->name('rooms');
+Route::get('/show_room',[HotelController::class,'show_room'])->name('show_room');
+Route::get('/room',[HotelController::class,'room'])->name('room');
+Route::get('/dashboard',[HotelController::class,'dashboard'])->name('dashboard');
+Route::post('/add_room',[HotelController::class,'add_room'])->name('add_room');
