@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Blog Posts</h3>
+                            <h3 class="box-title">Add Room</h3>
                             <a href="{{route('room')}}" class="btn btn-primary">Add Room</a>
                             {{-- <p class="text-muted">Add class <code>.table</code></p> --}}
                             @if (Session::has('success'))
