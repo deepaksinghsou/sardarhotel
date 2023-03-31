@@ -46,7 +46,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="/hotel/dashboard">
+                    <a class="navbar-brand" href="{{route('dashboard')}}">
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
@@ -245,7 +245,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center"> 2021 © sardar uzair <a
-                    href="https://www.github.com/sardaruzair1">su soft</a>
+                    href="https://www.github.com/sardaruzair1">su</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

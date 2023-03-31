@@ -44,7 +44,7 @@
                             @endif
                                             </td>
                                             <td>
-                            <a href="" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="{{route('edit_room',$data->id)}}" class="btn btn-primary btn-sm">Edit</a>
                             <a onclick="return confirm('Are You Sure')" href="{{route('delete_room',$data->id)}}"  class="btn btn-danger btn-sm">Delete</a>
                          
                                             </td>

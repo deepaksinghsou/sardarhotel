@@ -16,7 +16,7 @@ use App\Http\Controllers\HotelController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
 });
 
 Route::middleware([
@@ -34,3 +34,5 @@ Route::get('/room',[HotelController::class,'room'])->name('room');
 Route::get('/dashboard',[HotelController::class,'dashboard'])->name('dashboard');
 Route::post('/add_room',[HotelController::class,'add_room'])->name('add_room');
 Route::get('/delete_room/{id}',[HotelController::class,'delete_room'])->name('delete_room');
+Route::get('/edit_room/{id}',[HotelController::class,'edit_room'])->name('edit_room');
+Route::put('/update_room/{id}',[HotelController::class,'update_room'])->name('update_room');
