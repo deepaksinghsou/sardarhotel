@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use App\Models\Hotel;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class HotelController extends Controller
 {
     public function show_room()
     {
-        $rooms = Hotel::all();
+        $id = Auth::user()->id;
+        $rooms = Hotel::where('user_id','=',$id)->get();;
         return view('hotel.room.index',compact('rooms'));
     }
     public function room()
@@ -24,6 +27,7 @@ class HotelController extends Controller
     {
         $room = new Hotel;
         $room->title=$request->title;
+        $room->user_id=Auth::user()->id;
         $room->description=$request->description;
         $room->capacity=$request->capacity;
         $room->price=$request->price;
