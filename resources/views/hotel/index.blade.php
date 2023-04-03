@@ -95,7 +95,7 @@
                         <li>
                             <a class="profile-pic" href="#">
                                 <img src="{{ url('hotel/plugins/images/users/varun.jpg')}}" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Steave</span></a>
+                                    class="img-circle  ms-5"></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

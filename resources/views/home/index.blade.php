@@ -15,6 +15,11 @@
 <link href="{{ url('home/plugins/colorbox/colorbox.css')}}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ url('home/styles/main_styles.css')}}">
 <link rel="stylesheet" type="text/css" href="{{ url('home/styles/responsive.css')}}">
+<style>
+	a{
+		text-decoration: none;
+	}
+</style>
 </head>
 <body>
 
@@ -35,8 +40,24 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
+				@if (Route::has('login'))
+				@auth
 				<x-app-layout>
 				</x-app-layout>
+				@else
+				<ul>
+					<li>
+
+						<a href="{{ route('login') }}" class="text-white">Login</a>
+					</li>
+					<li>
+						<a href="{{ route('register') }}" class="text-white">Register</a>
+
+					</li>
+
+				</ul>
+				@endauth
+				@endif
 				{{-- <div class="book_button"><a href="booking.html">Book Online</a></div> --}}
 				<div class="header_phone d-flex flex-row align-items-center justify-content-center">
 					<img src="{{ url('home/images/phone.png')}}" alt="">
